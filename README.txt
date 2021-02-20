@@ -1,3 +1,5 @@
+<h1>TO DO LIST</h1>
+
 This is my first HTML, CSS, Vanilla Javascript project
 
 I'm trying to make a to-do list following a youtube tutorial at https://www.youtube.com/watch?v=Ttf3CEsEwMQ
