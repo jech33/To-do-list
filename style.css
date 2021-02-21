@@ -1,0 +1,148 @@
+/* First, all the browser styles pre-configuration is removed from the app thanks to the wildcard * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Set background, font, font color and min height. 
+    Min-height means the body will have its minimun height set as the height of the viewport */
+body {
+    background: linear-gradient(120deg, #f6d365, #ff8c6c);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* Set styles for header and form elements */
+header {
+    font-size: 1.5rem;
+}
+
+/* Min-height means both will have its minimun height set as 20% the height of the viewport */
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove borders and set background color */
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+/* Animation for the button element of the form */
+form button {
+    color: #ff8c6c;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff8c6c;
+    color: white;
+}
+
+/* Style to-do list and buttons created with JS */
+.to-do-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.to-do {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.to-do li {
+    flex: 1;
+}
+
+.trash-button, .completed-button {
+    background: #ff8c6c;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.completed-button {
+    background: rgb(103, 194, 103);
+}
+
+.to-do-item {
+    padding: 0rem 0.5rem;
+}
+
+/* Stop icons from being clicked */
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+/* Toggle off/on completed activities */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff8c6c;
+    width: 10rem;
+    cursor: pointer;
+    height: 3rem;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff8c6c;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #ff8c6c;
+}

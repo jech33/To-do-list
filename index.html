@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>To do List</title>
+</head>
+<body>
+
+    <!-- Inside the header element the title of the app can be found <h1> -->
+    <header>
+        <h1>Your To-do List</h1>
+    </header>
+    <!-- The form element receives a text (input) and adds it to the list through the to-do-button -->
+    <form>
+        <input type="text" class="to-do-input">
+        <button class="to-do-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="to-dos" class="filter-to-do">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <!-- 
+        This div element contains all the activities the user has added to the list.
+        The activities will be added to the <ul> element through the file app.js. 
+    -->
+    <div class="to-do-container">
+        <ul class="to-do-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
