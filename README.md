@@ -15,7 +15,7 @@ Every block of code is explained in the html file. The font used in the web app 
 
 Every block of code is explained in the CSS file as comments.
 
-<h2>app,js file</h2>
+<h2>app.js file</h2>
 
 The code is divided in 3 sections: Selectors, Event Listeners and Functions. 
 <ul list-style="circle">
